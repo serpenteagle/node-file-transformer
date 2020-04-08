@@ -1,8 +1,6 @@
-const fs = require("fs");
+module.exports = function (data, args) {
+  const edited = JSON.parse(data);
+  edited.edited = true;
 
-module.exports = function (target, args) {
-  const data = fs.readFileSync(target);
-  data.edited = true;
-
-  return JSON.parse(data);
+  return JSON.stringify(edited);
 };

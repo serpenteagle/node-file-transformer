@@ -6,7 +6,7 @@ const dir = process.cwd();
 const [targetLoc, scriptLoc] = process.argv.slice(2).map((v) => dir + "/" + v);
 const args = process.argv.slice(4);
 
-// console.log(targetLoc);
-const transformed = require(scriptLoc)(targetLoc);
+const data = fs.readFileSync(targetLoc);
 
+const transformed = require(scriptLoc)(data, args);
 fs.writeFileSync(targetLoc, transformed);
