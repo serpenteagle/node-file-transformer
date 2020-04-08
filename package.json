@@ -1,0 +1,20 @@
+{
+  "name": "ftrans",
+  "version": "0.0.0",
+  "description": "A node CLI tool that can transform any file with a supplied node function.",
+  "main": "index.js",
+  "bin": "./index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serpenteagle/node-file-transformer.git"
+  },
+  "author": "Shashank Rajesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/serpenteagle/node-file-transformer/issues"
+  },
+  "homepage": "https://github.com/serpenteagle/node-file-transformer#readme"
+}
